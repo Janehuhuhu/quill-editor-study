@@ -19,7 +19,7 @@ export default {
     return {
       content: `<p>hello world</p>`,
       editorOption: {
-        // modules 不填存在默认值
+        // modules 不填存在默认值 
         modules:{
           toolbar:[
             ['bold', 'italic', 'underline', 'strike'],    //加粗，斜体，下划线，删除线
