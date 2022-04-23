@@ -1,5 +1,9 @@
 <template>
   <div class="edit_container">
+    <h1>quill原生</h1>
+    <quill></quill>
+    <br>
+    <h1>vue-quill-editor</h1>
     <quill-editor 
       v-model="content" 
       ref="myQuillEditor" 
@@ -13,7 +17,9 @@
 </template>
 
 <script>
+import Quill from './components/quill.vue'
 export default {
+  components: { Quill },
   name: 'App',
   data() {
     return {
@@ -22,7 +28,7 @@ export default {
         // modules 不填存在默认值 
         modules:{
           toolbar:[
-            ['bold', 'italic', 'underline', 'strike'],    //加粗，斜体，下划线，删除线
+            ['bold', 'italic', 'underline', 'strike', 'link'],    //加粗，斜体，下划线，删除线
             ['blockquote', 'code-block'],     //引用，代码块
 
 
